@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fa - fa icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_content">
+          <div class="logo">
+            Sergei <br />
+            <span class="orange">Petukhov</span>
+          </div>
+          <div class="buttons_header">
+            <a class="btn" id="darkModeButton">Dark Mode</a>
+
+            <a href="#" class="btn"><i class="fa fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="line"></div>
+      <!-- Список покупок -->
+      <div class="container">
+        <div class="task1">
+          <h2>Список покупок</h2>
+          <div
+            class="shopping_list"
+            style="color: black"
+            id="shopping_list"
+          ></div>
+          <h2>Добавить покупку</h2>
+          <div class="form">
+            <input
+              class="form_input"
+              type="text"
+              id="product-name"
+              placeholder="Название продукта"
+            />
+            <input
+              class="form_input"
+              type="number"
+              id="product-quantity"
+              placeholder="Количество"
+              min="1"
+            />
+            <button class="form_btn" onclick="addProduct()">Добавить</button>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- Чек из магаза -->
+      <div class="container">
+        <h2>Чек из магаза</h2>
+        <div class="task2" style="color: black">
+          <h3 class="bill_title" style="color: black">Sex Shop</h3>
+          <div class="line"></div>
+          <div id="bill_list"></div>
+          <div class="line"></div>
+          <div class="most_expensive" id="most_expensive"></div>
+          <div class="average_price" id="average_price"></div>
+          <div class="full_price" id="full_price"></div>
+        </div>
+        <div class="form_chack">
+          <input
+            class="form_input"
+            type="text"
+            id="prodName"
+            placeholder="Название продукта"
+          />
+          <input
+            class="form_input"
+            type="number"
+            id="prodPrice"
+            placeholder="ценa"
+          />
+          <input
+            class="form_input"
+            type="number"
+            id="proQuantity"
+            placeholder="Количество"
+            min="1"
+          />
+          <button class="form_btn" onclick="addProductTobill()">
+            Добавить
+          </button>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- Текст со стилями -->
+      <div class="container">
+        <h2>Текст со стилями</h2>
+        <div id="style_text"></div>
+      </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
