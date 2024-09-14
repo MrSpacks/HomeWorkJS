@@ -12,6 +12,10 @@ import {
   ExpensProduct,
 } from "./components/task2.js";
 import Styles from "./components/task3.js";
+import {
+  renderClassRoom,
+  renderClassRoomsByFaculty,
+} from "./components/task4.js";
 const button = document.getElementById("darkModeButton");
 if (button) {
   button.addEventListener("click", darkMode);
@@ -25,6 +29,9 @@ window.AveragePrice = AveragePrice;
 window.addProductTobill = addProductTobill;
 window.ExpensProduct = ExpensProduct;
 window.Styles = Styles;
+window.renderClassRoom = renderClassRoom;
+window.renderClassRoomsByFaculty = renderClassRoomsByFaculty;
+renderShoppingList();
 renderBillList();
 addFullPrice();
 AveragePrice();

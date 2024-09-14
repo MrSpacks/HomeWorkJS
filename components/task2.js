@@ -10,7 +10,7 @@ function renderBillList() {
   // 1. Распечатка чека на экран.
   const billListContainer = document.getElementById("bill_list");
   billListContainer.innerHTML = "";
-  billList.forEach((item, index) => {
+  billList.forEach((item) => {
     const itemElement = document.createElement("ul");
     itemElement.innerHTML = `
         <li class="items_bill">
@@ -44,6 +44,9 @@ function addProductTobill() {
   }
 
   renderBillList();
+  ExpensProduct();
+  AveragePrice();
+  addFullPrice();
 }
 // 4. Подсчет средней стоимости одного товара в чеке
 function AveragePrice() {

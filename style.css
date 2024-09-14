@@ -198,3 +198,17 @@ body {
   text-align: end;
   font-size: 16px;
 }
+.items_class_room {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.item_room {
+  padding: 10px;
+}
+
+/* task 4 */
+.title_task {
+  margin: 20px;
+  font-size: 20px;
+}
